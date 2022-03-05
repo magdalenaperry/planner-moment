@@ -5,10 +5,13 @@ var textArea = document.getElementsByClassName(".description");
 var inputValue = textArea.value;
 var saveBtns = document.getElementsByTagName("button");
 var time = (moment().hour());
+
 // current time variable military time
-var timeNow = moment().format("H: mm: ss");
+var timeNow = moment().format("H: mm");
+
 // creates text as subheader for current time
-dayNowEl.textContent += timeNow;
+dayNowEl.textContent += timeNow + " (Military Time)";
+dayNowEl.classList.add("subheader");
 
 //sets up between 5 am - 12 am
 for (var i = 5; i <= 24; i++) {
@@ -62,8 +65,5 @@ containerEl.addEventListener("click", function (event) {
             )
         );
     }
-
-    
-
 });
 

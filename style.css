@@ -75,3 +75,7 @@ textarea {
   transition: all 0.3s ease-in-out;
   
 }
+
+.subheader {
+  font-size: 40px;
+}
